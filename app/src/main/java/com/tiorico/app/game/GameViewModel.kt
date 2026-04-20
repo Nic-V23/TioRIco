@@ -67,3 +67,4 @@ class GameViewModel : ViewModel() {
         listener?.let { db.child("rooms/$roomCode/players/$uid").removeEventListener(it) }
     }
 }
+

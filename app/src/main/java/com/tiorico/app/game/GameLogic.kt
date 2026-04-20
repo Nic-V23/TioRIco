@@ -23,3 +23,4 @@ object GameLogic {
     fun hasLost(money: Int) = money <= 0
 }
 
+
