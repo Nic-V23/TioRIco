@@ -52,7 +52,7 @@ fun GameScreen(roomCode: String, onGameOver: (Boolean, Int) -> Unit, vm: GameVie
             ActionButton("Gastar", Red, enabled) { vm.performAction("SPEND") }
             Spacer(Modifier.height(12.dp))
         }
-        HorizontalDivider(color = CardBg)
+       Divider(color = CardBg)
         ChatScreen(roomCode = roomCode, modifier = Modifier.weight(1f))
     }
 }
