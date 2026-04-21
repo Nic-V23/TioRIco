@@ -43,15 +43,21 @@ android {
 dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:34.12.0"))
+
     implementation("com.google.firebase:firebase-database-ktx:20.3.0")
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    implementation("androidx.navigation:navigation-compose:2.7.7")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
