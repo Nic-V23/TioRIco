@@ -2,7 +2,6 @@ package com.tiorico.app.result
 
 
 
-import androidx.compose.animation.core.*
 
 import androidx.compose.foundation.background
 
@@ -18,7 +17,7 @@ import androidx.compose.ui.Alignment
 
 import androidx.compose.ui.Modifier
 
-import androidx.compose.ui.draw.scale
+
 
 import androidx.compose.ui.graphics.Color
 
@@ -35,24 +34,6 @@ import com.tiorico.app.ui.theme.*
 @Composable
 
 fun ResultScreen(won: Boolean, finalMoney: Int, onRetry: () -> Unit, onExit: () -> Unit) {
-
-    val infiniteTransition = rememberInfiniteTransition(label = "bounce")
-
-    val scale by infiniteTransition.animateFloat(
-
-        initialValue = 1f, targetValue = 1.15f, label = "scale",
-
-        animationSpec = infiniteRepeatable(
-
-            animation = tween(600, easing = EaseInOut),
-
-            repeatMode = RepeatMode.Reverse
-
-        )
-
-    )
-
-
 
     Column(
 
@@ -84,7 +65,6 @@ fun ResultScreen(won: Boolean, finalMoney: Int, onRetry: () -> Unit, onExit: () 
 
             fontSize = 90.sp,
 
-            modifier = Modifier.scale(scale)
 
         )
 
